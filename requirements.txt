@@ -10,4 +10,4 @@ PyMuPDF
 packaging>=26.0
 Pillow
 pytesseract
-
+ethiopian-date
