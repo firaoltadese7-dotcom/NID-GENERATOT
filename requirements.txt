@@ -8,3 +8,4 @@ markupsafe>=3.0.3
 werkzeug>=3.1.5
 PyMuPDF
 packaging>=26.0
+Pillow
