@@ -82,7 +82,7 @@ def extract_pdf_data(pdf_path, image_paths):
     fan_number = fan_matches[0].replace(" ", "") if fan_matches else "Hin Argamne"
 
     data = {
-        "fullname": page.get_textbox(fitz.Rect(170.7, 218.6, 253.3, 239.2)).strip(),
+        "fullname": page.get_textbox(fitz.Rect(170.7, 218.6, 280, 239.2)).strip(),
         "dob": page.get_textbox(fitz.Rect(50, 290, 170, 300)).strip().replace("\n", " | "),
         "sex": page.get_textbox(fitz.Rect(50, 320, 170, 330)).strip().replace("\n", " | "),
         "nationality": page.get_textbox(fitz.Rect(50, 348, 170, 360)).strip().replace("\n", " | "),
@@ -212,4 +212,5 @@ def index():
     """
 
 if __name__ == "__main__":
+
     app.run(debug=True)
